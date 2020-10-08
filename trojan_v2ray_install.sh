@@ -287,7 +287,7 @@ function setLinuxDateZone(){
 # 软件安装
 
 function installBBR(){
-    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+    wget -N --no-check-certificate "https://raw.githubusercontent.com/ly19811105/one_click_script/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 
 function installBBR2(){
