@@ -808,7 +808,7 @@ EOF
     rm -rf ${configWebsitePath}/*
     mkdir -p ${configWebsiteDownloadPath}
 
-    downloadAndUnzip "https://github.com/ly19811105/one_click_script/raw/master/download/website.zip" "${configWebsitePath}" "website.zip"
+    downloadAndUnzip "https://github.com/ly19811105/one_click_script/raw/master/download/websiteNew.zip" "${configWebsitePath}" "website.zip"
     downloadAndUnzip "https://github.com/ly19811105/one_click_script/raw/master/download/trojan_client_all.zip" "${configWebsiteDownloadPath}" "trojan_client_all.zip"
     downloadAndUnzip "https://github.com/ly19811105/one_click_script/raw/master/download/trojan-qt5.zip" "${configWebsiteDownloadPath}" "trojan-qt5.zip"
     
