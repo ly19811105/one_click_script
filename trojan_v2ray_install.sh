@@ -1569,7 +1569,8 @@ function installV2ray(){
     "port": ${configV2rayPort},
     "listen":"127.0.0.1",
     "protocol": "${configV2rayProtocol}",
-    "settings": {
+    "settings": {    
+      "decryption": "none",
       "clients": [
         {
           "id": "${v2rayPassword1}",
