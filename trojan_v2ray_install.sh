@@ -106,7 +106,6 @@ function testLinuxPortUsage(){
             reboot
         fi
         exit
-    fi
 
     if [ "$osSELINUXCheck" == "SELINUX=permissive" ]; then
         red "======================================================================="
