@@ -550,12 +550,14 @@ startlotserver(){
 		apt-get install ethtool
 	fi
 	#bash <(wget -qO- https://git.io/lotServerInstall.sh) install
-	bash <(wget --no-check-certificate -qO- https://github.com/xidcn/LotServer_Vicer/raw/master/Install.sh) install
+	bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/ly19811105/lotServer/master/lotServerInstall.sh) install
 	sed -i '/advinacc/d' /appex/etc/config
 	sed -i '/maxmode/d' /appex/etc/config
 	echo -e "advinacc=\"1\"
 maxmode=\"1\"">>/appex/etc/config
 	/appex/bin/lotServer.sh restart
+	chmod +x /etc/rc.d/rc.local
+     	echo "/appex/bin/lotServer.sh start" >> /etc/rc.d/rc.local
 	start_menu
 }
 
